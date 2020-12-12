@@ -6,7 +6,7 @@ import time
 #Opening chrome with facebook
 driver = webdriver.Chrome("C:\\Users\\admin\Downloads\\chromedriver.exe")  #give your driver path
 web=driver.get("https://www.facebook.com/")
-time.sleep(3)                                                             #time to load site 
+time.sleep(3)          #time to load site
 driver.maximize_window()
 
 #enter credentials 
