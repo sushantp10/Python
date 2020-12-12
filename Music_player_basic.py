@@ -1,5 +1,5 @@
 import pyautogui as pygui
-import time,turtle, random
+import time, random
 import pygame.mixer_music as mu
 import pygame.mixer as mi
 import pygame,os
@@ -10,7 +10,7 @@ for track in os.listdir(path=path):
     a="G:\\Songs\\"+track
     songs.append(a)
 
-def music_player():
+def music_player(): #function defination
     mi.init()
     mu.set_volume(0.7)
     mu.load(random.choice(songs))
@@ -43,5 +43,5 @@ def music_player():
     print("Player get quit !")
 mi.quit()
 
-music_player()
+music_player() #function calling
 
